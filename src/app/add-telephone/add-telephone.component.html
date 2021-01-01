@@ -1,0 +1,33 @@
+<div class="container">
+    <div>
+    <h2>Ajouter un Telephone :</h2>
+    </div>
+    <form >
+        <div hidden class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID Telephone</label>
+        <input type="text" [(ngModel)]="newTelephone.idTel" name="idTel" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Marque Tel</label>
+        <input type="text"[(ngModel)]= "newTelephone.marqueTel" name="marqueTel" class="form-control">
+        </div>
+
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Prix Telephone</label>
+        <input type="number" [(ngModel)]= "newTelephone.prixTel" name="prixTel" class="form-control">
+        </div>
+
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date création</label>
+        <input type="date" [(ngModel)]= "newTelephone.dateCreation" name="dateCreation" class="form-control">
+        </div>
+
+        <div class="mt-2">
+        <button type="submit" (click)="addTelephone()" class="btn btn-success">Ajouter</button>
+        <div>
+            {{message}}
+        </div>
+        </div>
+        </form>
+        </div>
